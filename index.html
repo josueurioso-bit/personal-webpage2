@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Josue Urioso | Personal Page</title>
+  <meta name="description" content="Personal webpage for Josue Urioso: data, projects, and personality." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="#top" aria-label="Go to top">JU</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#now">Now</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button id="themeBtn" class="btn ghost" type="button" aria-label="Toggle theme">🌗</button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="section hero">
+      <div class="hero-grid">
+        <div>
+          <p class="kicker">Staten Island, NY • Aspiring Data Analyst</p>
+          <h1>Hi, I’m <span class="accent">Josue</span>.</h1>
+          <p class="lead">
+            I’m transitioning into data analytics after working in film production and operations. I like asking good questions, cleaning messy data, and turning it into something people can actually use.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn" href="#projects">See Projects</a>
+            <a class="btn ghost" href="#contact">Contact</a>
+          </div>
+
+          <div class="mini-stats">
+            <div class="chip"><span>🎬</span> Film production background</div>
+            <div class="chip"><span>📊</span> Excel / SQL / Tableau learning</div>
+            <div class="chip"><span>🥊</span> Muay Thai discipline</div>
+          </div>
+        </div>
+
+        <div class="card portrait">
+          <div class="avatar" aria-hidden="true">JU</div>
+          <div class="portrait-text">
+            <h2 class="h3">What I’m about</h2>
+            <p>
+              Curious, consistent, and practical. I like building things that people can actually use.
+              If it saves time, reduces confusion, or makes decisions easier, I’m in.
+            </p>
+            <p class="tiny subtle">Tip: add a real photo later in /assets and swap the avatar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2>About</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>My story</h3>
+          <p>
+            I’ve worked in fast-paced environments (dispatching, customer coordination, production crews),
+            and I’m now focusing on analytics: asking better questions, cleaning data, and communicating insights clearly.
+          </p>
+          <p>
+            I’m especially interested in projects that connect creativity + numbers: entertainment, operations, and small business.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>What you’ll notice</h3>
+          <ul class="bullets">
+            <li><strong>Clarity:</strong> I like simple dashboards and readable outputs.</li>
+            <li><strong>Consistency:</strong> I practice every day and ship small improvements.</li>
+            <li><strong>Communication:</strong> I can explain tech in plain language.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="row-between">
+        <h2>Projects</h2>
+        <p class="subtle">Clickable cards (add links as you publish).</p>
+      </div>
+
+      <div class="cards-3">
+        <a class="card project" href="#" target="_blank" rel="noreferrer">
+          <div class="project-top">
+            <h3>Film Industry ROI Dashboard</h3>
+            <span class="tag">Tableau</span>
+          </div>
+          <p>
+            Explored which genres tend to produce better returns, using ROI metrics and clean visuals.
+          </p>
+          <ul class="meta">
+            <li>Data cleaning</li>
+            <li>Median vs average ROI</li>
+            <li>Decision-focused insights</li>
+          </ul>
+        </a>
+
+        <a class="card project" href="https://josueurioso-bit.github.io/unit-converter-km-mi/" target="_blank" rel="noreferrer">
+          <div class="project-top">
+            <h3>Unit Converter (km ⇄ mi)</h3>
+            <span class="tag">HTML/CSS/JS</span>
+          </div>
+          <p>
+            A clean little web app with user input validation and conversion history.
+          </p>
+          <ul class="meta">
+            <li>DOM manipulation</li>
+            <li>Event handling</li>
+            <li>GitHub Pages deploy</li>
+          </ul>
+        </a>
+
+        <a class="card project" href="#" target="_blank" rel="noreferrer">
+          <div class="project-top">
+            <h3>Daily Dashboard Series</h3>
+            <span class="tag">Practice</span>
+          </div>
+          <p>
+            Building one small dashboard a day to sharpen analysis, design, and storytelling.
+          </p>
+          <ul class="meta">
+            <li>SMART questions</li>
+            <li>Clean charts</li>
+            <li>Short write-ups</li>
+          </ul>
+        </a>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Data</h3>
+          <div class="skill-row">
+            <span>Excel</span><progress value="60" max="100"></progress>
+          </div>
+          <div class="skill-row">
+            <span>SQL</span><progress value="35" max="100"></progress>
+          </div>
+          <div class="skill-row">
+            <span>Tableau</span><progress value="45" max="100"></progress>
+          </div>
+          <p class="tiny subtle">These are “current comfort levels”, not brag meters.</p>
+        </div>
+
+        <div class="card">
+          <h3>Strengths</h3>
+          <div class="pill-wrap">
+            <span class="pill">Customer communication</span>
+            <span class="pill">Scheduling & coordination</span>
+            <span class="pill">Problem solving</span>
+            <span class="pill">Detail-oriented</span>
+            <span class="pill">Bilingual (EN/ES)</span>
+            <span class="pill">Production mindset</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOW -->
+    <section id="now" class="section">
+      <h2>What I’m working on now</h2>
+      <div class="card">
+        <ul class="bullets">
+          <li>Building a portfolio of small, real projects (dashboard + web apps).</li>
+          <li>Practicing the analyst mindset: better questions, cleaner data, clearer outputs.</li>
+          <li>Leveling up: Excel + SQL fundamentals, then storytelling in Tableau.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Reach me</h3>
+          <p class="subtle">Best for opportunities, collaborations, or feedback.</p>
+          <div class="contact-list">
+            <a class="contact" href="mailto:josueurioso@gmail.com">📧 josueurioso@gmail.com</a>
+            <a class="contact" href="https://www.linkedin.com/in/josue-urioso-634535181/" target="_blank" rel="noreferrer">💼 LinkedIn</a>
+            <a class="contact" href="https://github.com/josueurioso-bit" target="_blank" rel="noreferrer">💻 GitHub</a>
+          </div>
+        </div>
+
+        <form class="card" onsubmit="return false;">
+          <h3>Quick message</h3>
+          <p class="tiny subtle">This demo form shows front-end skills. For real messages, use email.</p>
+
+          <label>
+            Your name
+            <input id="nameInput" type="text" placeholder="Jane Doe" autocomplete="name" />
+          </label>
+
+          <label>
+            Your message
+            <textarea id="msgInput" rows="4" placeholder="What’s up, Josue?"></textarea>
+          </label>
+
+          <button id="fakeSendBtn" class="btn" type="submit">Send</button>
+          <p id="formStatus" class="tiny subtle" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="tiny subtle">© <span id="year"></span> Josue Urioso • Built with HTML/CSS/JS • Deployed on GitHub Pages</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
