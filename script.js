@@ -1,3 +1,9 @@
+// Fix scroll-to-top on page load (removes hash from URL and scrolls to top)
+if (window.location.hash) {
+  history.replaceState(null, null, ' ');
+}
+window.scrollTo(0, 0);
+
 const yearEl = document.getElementById("year");
 yearEl.textContent = new Date().getFullYear();
 

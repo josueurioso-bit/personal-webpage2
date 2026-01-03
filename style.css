@@ -206,6 +206,34 @@ progress{
   transition: all 0.3s ease;
 }
 
+/* SKILL LIST STYLING */
+.skill-list{display:flex; flex-direction:column; gap:14px}
+.skill-item{
+  display:flex;
+  align-items:flex-start;
+  gap:12px;
+  padding:10px;
+  border-radius:12px;
+  background: color-mix(in srgb, var(--card) 85%, transparent);
+  border:1px solid var(--border);
+  transition: all 0.2s ease;
+}
+.skill-item:hover{
+  background: color-mix(in srgb, var(--card) 95%, transparent);
+  transform: translateX(3px);
+}
+.skill-icon{
+  font-size:24px;
+  line-height:1;
+  flex-shrink:0;
+}
+.skill-item strong{
+  display:block;
+  margin-bottom:2px;
+  color:var(--text);
+}
+.skill-item .tiny{margin:0}
+
 .pill-wrap{display:flex; flex-wrap:wrap; gap:10px; margin-top:8px}
 .pill{
   padding:8px 10px;
