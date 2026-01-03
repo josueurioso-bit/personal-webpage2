@@ -14,9 +14,9 @@
       <a class="logo" href="#top" aria-label="Go to top">JU</a>
       <div class="nav-links">
         <a href="#about">About</a>
+        <a href="#interests">Interests</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
-        <a href="#now">Now</a>
         <a href="#contact">Contact</a>
       </div>
       <button id="themeBtn" class="btn ghost" type="button" aria-label="Toggle theme">🌗</button>
@@ -54,7 +54,6 @@
               Curious, consistent, and practical. I like building things that people can actually use.
               If it saves time, reduces confusion, or makes decisions easier, I'm in.
             </p>
-            <p class="tiny subtle">Tip: add a real photo later in /assets and swap the avatar.</p>
           </div>
         </div>
       </div>
@@ -86,57 +85,76 @@
       </div>
     </section>
 
+    <!-- INTERESTS -->
+    <section id="interests" class="section">
+      <h2>What I'm Into</h2>
+      <p class="subtle">The things that keep me curious, active, and creative.</p>
+      
+      <div class="interest-grid">
+        <div class="card interest-card">
+          <img src="assets/muay-thai.jpg" alt="Muay Thai victory" class="interest-img" />
+          <div class="interest-content">
+            <h3>Muay Thai</h3>
+            <p>
+              Training muay thai has taught me discipline, resilience, and how to stay calm under pressure. It's where I challenge myself physically and mentally.
+            </p>
+          </div>
+        </div>
+
+        <div class="card interest-card">
+          <img src="assets/anime.jpg" alt="Anime figure collection" class="interest-img" />
+          <div class="interest-content">
+            <h3>Anime & Manga</h3>
+            <p>
+              From Naruto to modern series, I love the storytelling, character development, and artistry. It's where creativity and emotion come together.
+            </p>
+          </div>
+        </div>
+
+        <div class="card interest-card">
+          <img src="assets/space.jpg" alt="Space exploration" class="interest-img" />
+          <div class="interest-content">
+            <h3>Science & Space</h3>
+            <p>
+              I'm fascinated by how things work, from physics to astronomy. The universe is endlessly interesting, and there's always something new to learn.
+            </p>
+          </div>
+        </div>
+
+        <div class="card interest-card">
+          <img src="assets/photography.jpg" alt="Photography work" class="interest-img" />
+          <div class="interest-content">
+            <h3>Photography</h3>
+            <p>
+              Capturing moments and perspectives through a lens. I enjoy the creative process and the challenge of finding the right composition.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- PROJECTS -->
     <section id="projects" class="section">
       <div class="row-between">
         <h2>Projects</h2>
-        <p class="subtle">Clickable cards (add links as you publish).</p>
+        <p class="subtle">Building skills through real applications.</p>
       </div>
 
-      <div class="cards-3">
-        <a class="card project" href="#" target="_blank" rel="noreferrer">
-          <div class="project-top">
-            <h3>Film Industry ROI Dashboard</h3>
-            <span class="tag">Tableau</span>
-          </div>
-          <p>
-            Explored which genres tend to produce better returns, using ROI metrics and clean visuals.
-          </p>
-          <ul class="meta">
-            <li>Data cleaning</li>
-            <li>Median vs average ROI</li>
-            <li>Decision-focused insights</li>
-          </ul>
-        </a>
-
-        <a class="card project" href="https://josueurioso-bit.github.io/unit-converter-km-mi/" target="_blank" rel="noreferrer">
+      <div class="project-showcase">
+        <a class="card project featured" href="https://josueurioso-bit.github.io/unit-converter-km-mi/" target="_blank" rel="noreferrer">
           <div class="project-top">
             <h3>Unit Converter (km ⇄ mi)</h3>
             <span class="tag">HTML/CSS/JS</span>
           </div>
           <p>
-            A clean little web app with user input validation and conversion history.
+            A clean web app with user input validation and conversion history. Built to practice DOM manipulation and create a practical tool.
           </p>
           <ul class="meta">
-            <li>DOM manipulation</li>
-            <li>Event handling</li>
-            <li>GitHub Pages deploy</li>
+            <li>DOM manipulation & event handling</li>
+            <li>Input validation & error handling</li>
+            <li>Deployed on GitHub Pages</li>
           </ul>
-        </a>
-
-        <a class="card project" href="#" target="_blank" rel="noreferrer">
-          <div class="project-top">
-            <h3>Daily Dashboard Series</h3>
-            <span class="tag">Practice</span>
-          </div>
-          <p>
-            Building one small dashboard a day to sharpen analysis, design, and storytelling.
-          </p>
-          <ul class="meta">
-            <li>SMART questions</li>
-            <li>Clean charts</li>
-            <li>Short write-ups</li>
-          </ul>
+          <p class="tiny subtle" style="margin-top: 12px;">More projects coming soon as I build my portfolio.</p>
         </a>
       </div>
     </section>
@@ -170,18 +188,6 @@
             <span class="pill">Production mindset</span>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- NOW -->
-    <section id="now" class="section">
-      <h2>What I'm working on now</h2>
-      <div class="card">
-        <ul class="bullets">
-          <li>Building a portfolio of small, real projects (dashboard + web apps).</li>
-          <li>Practicing the analyst mindset: better questions, cleaner data, clearer outputs.</li>
-          <li>Leveling up: Excel + SQL fundamentals, then storytelling in Tableau.</li>
-        </ul>
       </div>
     </section>
 
