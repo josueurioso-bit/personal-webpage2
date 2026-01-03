@@ -28,7 +28,11 @@ body{
   line-height:1.6;
 }
 
-a{color:inherit; text-decoration:none}
+a{
+  color:inherit; 
+  text-decoration:none;
+  transition: all 0.2s ease;
+}
 .section{max-width:1050px; margin:0 auto; padding:72px 20px}
 h1,h2,h3{line-height:1.15; margin:0 0 12px}
 h1{font-size:44px}
@@ -45,6 +49,7 @@ p{margin:0 0 12px}
   backdrop-filter:saturate(1.2) blur(10px);
   background: color-mix(in srgb, var(--bg) 75%, transparent);
   border-bottom:1px solid var(--border);
+  transition: all 0.3s ease;
 }
 
 .nav{
@@ -61,13 +66,16 @@ p{margin:0 0 12px}
   border-radius:12px;
   box-shadow: var(--shadow);
   font-weight:700;
+  transition: transform 0.2s ease;
 }
+.logo:hover{transform: scale(1.05)}
 
 .nav-links{margin-left:auto; display:flex; gap:14px; align-items:center}
 .nav-links a{
   padding:8px 10px;
   border-radius:10px;
   color:var(--muted);
+  transition: all 0.2s ease;
 }
 .nav-links a:hover{background:var(--card); color:var(--text)}
 
@@ -84,8 +92,13 @@ p{margin:0 0 12px}
   gap:8px;
   box-shadow: var(--shadow);
   font-weight:600;
+  transition: all 0.2s ease;
 }
-.btn:hover{filter:brightness(1.03)}
+.btn:hover{
+  filter:brightness(1.1);
+  transform: translateY(-1px);
+  box-shadow: 0 12px 35px rgba(0,0,0,.45);
+}
 .btn.ghost{
   background:transparent;
   color:var(--text);
@@ -111,6 +124,7 @@ p{margin:0 0 12px}
   border-radius:18px;
   padding:18px;
   box-shadow: var(--shadow);
+  transition: all 0.3s ease;
 }
 
 .portrait{display:flex; gap:14px; align-items:flex-start}
@@ -122,6 +136,15 @@ p{margin:0 0 12px}
   border:1px solid var(--border);
   font-weight:800;
 }
+.avatar-img{
+  width:56px; height:56px;
+  border-radius:16px;
+  border:1px solid var(--border);
+  object-fit:cover;
+  display:block;
+  transition: transform 0.3s ease;
+}
+.avatar-img:hover{transform: scale(1.05)}
 
 .mini-stats{display:flex; flex-wrap:wrap; gap:10px}
 .chip{
@@ -132,6 +155,11 @@ p{margin:0 0 12px}
   font-size:13px;
   color:var(--muted);
   display:flex; gap:8px; align-items:center;
+  transition: all 0.2s ease;
+}
+.chip:hover{
+  background: color-mix(in srgb, var(--card) 95%, transparent);
+  transform: translateY(-1px);
 }
 
 .grid-2{display:grid; grid-template-columns: 1fr 1fr; gap:14px}
@@ -152,8 +180,12 @@ p{margin:0 0 12px}
   .cards-3{grid-template-columns:1fr}
 }
 
-.project{transition: transform .12s ease, filter .12s ease}
-.project:hover{transform: translateY(-2px); filter:brightness(1.02)}
+.project{transition: all 0.3s ease}
+.project:hover{
+  transform: translateY(-3px);
+  filter:brightness(1.05);
+  box-shadow: 0 15px 40px rgba(0,0,0,.5);
+}
 .project-top{display:flex; justify-content:space-between; gap:10px; align-items:center}
 .tag{
   font-size:12px;
@@ -161,13 +193,18 @@ p{margin:0 0 12px}
   border-radius:999px;
   border:1px solid var(--border);
   color:var(--muted);
+  transition: all 0.2s ease;
 }
 
 .meta{margin:10px 0 0; padding-left:18px; color:var(--muted)}
 .meta li{margin:6px 0}
 
 .skill-row{display:flex; align-items:center; gap:12px; margin:10px 0}
-progress{width:100%; height:14px}
+progress{
+  width:100%; 
+  height:14px;
+  transition: all 0.3s ease;
+}
 
 .pill-wrap{display:flex; flex-wrap:wrap; gap:10px; margin-top:8px}
 .pill{
@@ -177,6 +214,11 @@ progress{width:100%; height:14px}
   color:var(--muted);
   background: color-mix(in srgb, var(--card) 85%, transparent);
   font-size:13px;
+  transition: all 0.2s ease;
+}
+.pill:hover{
+  background: color-mix(in srgb, var(--card) 95%, transparent);
+  transform: translateY(-1px);
 }
 
 .contact-list{display:flex; flex-direction:column; gap:10px; margin-top:10px}
@@ -185,8 +227,12 @@ progress{width:100%; height:14px}
   border-radius:14px;
   border:1px solid var(--border);
   background: color-mix(in srgb, var(--card) 85%, transparent);
+  transition: all 0.2s ease;
 }
-.contact:hover{filter:brightness(1.03)}
+.contact:hover{
+  filter:brightness(1.08);
+  transform: translateX(3px);
+}
 
 label{display:flex; flex-direction:column; gap:8px; margin-top:10px; color:var(--muted)}
 input, textarea{
@@ -196,8 +242,12 @@ input, textarea{
   background: transparent;
   color: var(--text);
   outline:none;
+  transition: all 0.2s ease;
 }
-input:focus, textarea:focus{border-color: color-mix(in srgb, var(--accent) 70%, var(--border))}
+input:focus, textarea:focus{
+  border-color: color-mix(in srgb, var(--accent) 70%, var(--border));
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 15%, transparent);
+}
 .footer{padding:24px 20px; border-top:1px solid var(--border); text-align:center}
 
 /* INTERESTS SECTION */
@@ -206,8 +256,30 @@ input:focus, textarea:focus{border-color: color-mix(in srgb, var(--accent) 70%, 
   .interest-grid{grid-template-columns:1fr}
 }
 
-.interest-card{display:flex; flex-direction:column; overflow:hidden; padding:0}
-.interest-img{width:100%; height:240px; object-fit:cover; display:block}
+.interest-card{
+  display:flex; 
+  flex-direction:column; 
+  overflow:hidden; 
+  padding:0;
+  transition: all 0.3s ease;
+}
+.interest-card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 18px 45px rgba(0,0,0,.6);
+}
+.interest-img{
+  width:100%; 
+  height:200px; 
+  object-fit:cover; 
+  display:block;
+  transition: all 0.4s ease;
+}
+@media (max-width: 900px){
+  .interest-img{height:240px}
+}
+.interest-card:hover .interest-img{
+  transform: scale(1.05);
+}
 .interest-content{padding:18px}
 .interest-content h3{margin:0 0 8px}
 .interest-content p{margin:0; color:var(--muted)}
@@ -215,4 +287,3 @@ input:focus, textarea:focus{border-color: color-mix(in srgb, var(--accent) 70%, 
 /* PROJECT SHOWCASE */
 .project-showcase{margin-top:18px}
 .project.featured{max-width:600px}
-
